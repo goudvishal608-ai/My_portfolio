@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishal — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-dot"></span>Vishal<span class="brand-accent">.</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#todo">To-Do App</a></li>
+          <li class="nav-item"><a class="nav-link" href="#api">GitHub Search</a></li>
+          <li class="nav-item"><a class="nav-link" href="#youtube">YouTube UI</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== TASK 1: HOME SECTION ===== -->
+  <section id="home" class="hero-section">
+    <div class="hero-grid-bg"></div>
+    <div class="container">
+      <div class="row align-items-center min-vh-100">
+        <div class="col-lg-7">
+          <div class="hero-tag">Available for hire</div>
+          <h1 class="hero-title">
+            Hello, I'm <span class="hero-highlight">VISHAL</span> 👋
+          </h1>
+          <p class="hero-sub">
+            I build modern portfolio websites, task apps, and interactive frontend experiences. HTML · CSS · JavaScript · React.
+          </p>
+          <div class="hero-cta d-flex flex-wrap gap-3">
+            <a href="#projects" class="btn btn-primary-custom">Explore My Work</a>
+            <a href="#contact" class="btn btn-outline-custom">Get In Touch</a>
+          </div>
+          <div class="hero-stats d-flex gap-4 mt-5">
+            <div><span class="stat-num">12+</span><span class="stat-label">Projects</span></div>
+            <div class="stat-divider"></div>
+            <div><span class="stat-num">3</span><span class="stat-label">Years Exp.</span></div>
+            <div class="stat-divider"></div>
+            <div><span class="stat-num">8</span><span class="stat-label">Happy Clients</span></div>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+          <div class="hero-visual">
+            <div class="code-card">
+              <div class="code-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="code-filename">portfolio.js</span>
+              </div>
+              <pre class="code-body"><span class="c-keyword">const</span> <span class="c-var">dev</span> = {
+  <span class="c-key">name</span>: <span class="c-str">"Vishal"</span>,
+  <span class="c-key">role</span>: <span class="c-str">"Frontend Dev"</span>,
+  <span class="c-key">skills</span>: [
+    <span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>,
+    <span class="c-str">"JS"</span>, <span class="c-str">"React"</span>
+  ],
+  <span class="c-key">available</span>: <span class="c-bool">true</span>
+};</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TASK 1: SKILLS SECTION ===== -->
+  <section id="skills" class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">What I work with</span>
+        <h2 class="section-title">Skills & Tools</h2>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+            <h4>HTML5</h4>
+            <p>Semantic markup, accessibility, SEO best practices.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+            <h4>CSS3</h4>
+            <p>Flexbox, Grid, animations, responsive design.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-js"></i></div>
+            <h4>JavaScript</h4>
+            <p>ES6+, DOM manipulation, async/await, APIs.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-react"></i></div>
+            <h4>React</h4>
+            <p>Hooks, context, component architecture.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+            <h4>Bootstrap</h4>
+            <p>Grid system, utilities, responsive components.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+            <h4>Git & GitHub</h4>
+            <p>Version control, branching, collaboration.</p>
+            <div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TASK 1: PROJECTS SECTION ===== -->
+  <section id="projects" class="section-pad section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">What I've built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#6c63ff,#3b82f6);">
+              <i class="fas fa-shopping-cart fa-2x"></i>
+            </div>
+            <div class="project-body">
+              <span class="project-tag">React · Firebase</span>
+              <h5>E-Commerce Store</h5>
+              <p>Full-stack shopping app with cart, auth, and payments.</p>
+              <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#10b981,#059669);">
+              <i class="fas fa-cloud-sun fa-2x"></i>
+            </div>
+            <div class="project-body">
+              <span class="project-tag">JS · Weather API</span>
+              <h5>Weather Dashboard</h5>
+              <p>Real-time weather with 5-day forecast and geolocation.</p>
+              <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="project-card">
+            <div class="project-thumb" style="background: linear-gradient(135deg,#f59e0b,#ef4444);">
+              <i class="fas fa-tasks fa-2x"></i>
+            </div>
+            <div class="project-body">
+              <span class="project-tag">HTML · CSS · JS</span>
+              <h5>Task Manager</h5>
+              <p>Drag-and-drop Kanban board with local persistence.</p>
+              <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TASK 2: TO-DO LIST APP ===== -->
+  <section id="todo" class="section-pad">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Task 2 — DOM Manipulation</span>
+        <h2 class="section-title">To-Do List App</h2>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-lg-6">
+          <div class="todo-app">
+            <div class="todo-input-wrap">
+              <input type="text" id="todoInput" class="todo-input" placeholder="Add a new task..." maxlength="100" />
+              <button id="todoAddBtn" class="todo-add-btn"><i class="fas fa-plus"></i></button>
+            </div>
+            <div class="todo-filters d-flex gap-2 mt-3">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="active">Active</button>
+              <button class="filter-btn" data-filter="done">Done</button>
+            </div>
+            <ul id="todoList" class="todo-list mt-3"></ul>
+            <div class="todo-footer d-flex justify-content-between align-items-center mt-3">
+              <span id="todoCount" class="todo-count">0 tasks left</span>
+              <button id="clearDoneBtn" class="clear-btn">Clear done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TASK 3: GITHUB API SEARCH ===== -->
+  <section id="api" class="section-pad section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Task 3 — REST API + Fetch</span>
+        <h2 class="section-title">GitHub User Search</h2>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-lg-8">
+          <div class="api-search-wrap d-flex gap-2">
+            <input type="text" id="ghInput" class="api-input" placeholder="Search GitHub username..." />
+            <button id="ghSearchBtn" class="btn btn-primary-custom px-4">Search</button>
+          </div>
+          <div id="ghLoading" class="api-loading d-none">
+            <div class="spinner"></div><span>Searching GitHub...</span>
+          </div>
+          <div id="ghError" class="api-error d-none"></div>
+          <div id="ghResult" class="api-result d-none">
+            <div class="gh-card d-flex gap-4 align-items-start">
+              <img id="ghAvatar" src="" alt="avatar" class="gh-avatar" />
+              <div class="gh-info">
+                <h4 id="ghName"></h4>
+                <a id="ghLogin" href="#" target="_blank" class="gh-login"></a>
+                <p id="ghBio" class="gh-bio"></p>
+                <div class="gh-stats d-flex flex-wrap gap-3 mt-2">
+                  <span><i class="fas fa-users"></i> <strong id="ghFollowers"></strong> followers</span>
+                  <span><i class="fas fa-user-friends"></i> <strong id="ghFollowing"></strong> following</span>
+                  <span><i class="fas fa-book"></i> <strong id="ghRepos"></strong> repos</span>
+                </div>
+                <div class="gh-meta d-flex flex-wrap gap-3 mt-2">
+                  <span id="ghLocation"></span>
+                  <span id="ghBlog"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Repo Results -->
+          <div id="ghRepoList" class="mt-4"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TASK 4: YOUTUBE UI CLONE ===== -->
+  <section id="youtube" class="section-pad">
+    <div class="container-fluid px-0">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Task 4 — UI Clone</span>
+          <h2 class="section-title">YouTube Layout Clone</h2>
+        </div>
+      </div>
+      <!-- YouTube Navbar -->
+      <div class="yt-nav">
+        <div class="yt-nav-left">
+          <button class="yt-menu-btn"><i class="fas fa-bars"></i></button>
+          <div class="yt-logo">
+            <i class="fab fa-youtube" style="color:#ff0000;font-size:1.6rem"></i>
+            <span>YouTube</span>
+          </div>
+        </div>
+        <div class="yt-search-wrap">
+          <input type="text" class="yt-search" placeholder="Search" id="ytSearchInput" />
+          <button class="yt-search-btn"><i class="fas fa-search"></i></button>
+          <button class="yt-mic-btn"><i class="fas fa-microphone"></i></button>
+        </div>
+        <div class="yt-nav-right">
+          <button class="yt-icon-btn"><i class="fas fa-video"></i></button>
+          <button class="yt-icon-btn"><i class="fas fa-bell"></i></button>
+          <div class="yt-avatar">A</div>
+        </div>
+      </div>
+      <!-- YouTube Category Pills -->
+      <div class="yt-pills-wrap">
+        <div class="yt-pills" id="ytPills">
+          <button class="yt-pill active" data-cat="all">All</button>
+          <button class="yt-pill" data-cat="music">Music</button>
+          <button class="yt-pill" data-cat="gaming">Gaming</button>
+          <button class="yt-pill" data-cat="news">News</button>
+          <button class="yt-pill" data-cat="sports">Sports</button>
+          <button class="yt-pill" data-cat="learning">Learning</button>
+          <button class="yt-pill" data-cat="coding">Coding</button>
+          <button class="yt-pill" data-cat="cooking">Cooking</button>
+          <button class="yt-pill" data-cat="travel">Travel</button>
+        </div>
+      </div>
+      <!-- YouTube Layout -->
+      <div class="yt-layout">
+        <!-- Sidebar -->
+        <aside class="yt-sidebar d-none d-xl-flex">
+          <a href="#" class="yt-sidebar-item active"><i class="fas fa-home"></i><span>Home</span></a>
+          <a href="#" class="yt-sidebar-item"><i class="fas fa-fire"></i><span>Trending</span></a>
+          <a href="#" class="yt-sidebar-item"><i class="fas fa-compact-disc"></i><span>Music</span></a>
+          <a href="#" class="yt-sidebar-item"><i class="fas fa-gamepad"></i><span>Gaming</span></a>
+          <a href="#" class="yt-sidebar-item"><i class="fas fa-newspaper"></i><span>News</span></a>
+          <a href="#" class="yt-sidebar-item"><i class="fas fa-trophy"></i><span>Sports</span></a>
+          <hr class="yt-divider" />
+          <a href="#" class="yt-sidebar-item"><i class="fas fa-clock"></i><span>Watch Later</span></a>
+          <a href="#" class="yt-sidebar-item"><i class="fas fa-thumbs-up"></i><span>Liked Videos</span></a>
+        </aside>
+        <!-- Video Grid -->
+        <main class="yt-main">
+          <div class="yt-grid" id="ytGrid"></div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TASK 1: CONTACT SECTION ===== -->
+  <section id="contact" class="section-pad section-dark">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Let's work together</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <div class="row g-5 mt-2">
+        <div class="col-lg-5">
+          <p class="contact-intro">Have a project in mind? I'd love to hear about it. Drop me a message and I'll get back within 24 hours.</p>
+          <div class="contact-links mt-4">
+            <a href="mailto:vishal@example.com" class="contact-link"><i class="fas fa-envelope"></i> vishal@example.com</a>
+            <a href="https://github.com" target="_blank" class="contact-link"><i class="fab fa-github"></i> <github class="com">
+            <vishal></vishal></a>
+            <a href="https://linkedin.com" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> <linkedin class="com">
+            <in>
+            <vishal></vishal></a>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="contact-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label-custom">Name</label>
+                <input type="text" class="input-custom" placeholder="Your name" />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label-custom">Email</label>
+                <input type="email" class="input-custom" placeholder="you@example.com" />
+              </div>
+              <div class="col-12">
+                <label class="form-label-custom">Subject</label>
+                <input type="text" class="input-custom" placeholder="Project inquiry" />
+              </div>
+              <div class="col-12">
+                <label class="form-label-custom">Message</label>
+                <textarea class="input-custom" rows="5" placeholder="Tell me about your project..."></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary-custom w-100" id="sendMsgBtn">Send Message</button>
+                <div id="contactSuccess" class="contact-success d-none mt-3">
+                  <i class="fas fa-check-circle"></i> Message sent! I'll be in touch soon.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>Built with HTML, CSS, Bootstrap & JavaScript · &copy; 2025 Vishal</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
