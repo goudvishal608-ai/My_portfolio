@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 2 - Mini Interactive JavaScript App</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 24px; line-height: 1.6; color: #111827; }
+    h1, h2, h3 { color: #0f172a; }
+    code, pre { background: #f3f4f6; padding: 4px 8px; border-radius: 6px; }
+    pre { padding: 12px; overflow-x: auto; }
+    .card { border: 1px solid #d1d5db; border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+    img { max-width: 100%; border: 1px solid #e5e7eb; border-radius: 8px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Task 2 - Mini Interactive JavaScript App</h1>
+  <p><strong>Project:</strong> To-Do app with add, complete, filter, and clear completed features.</p>
+
+  <div class="card">
+    <h2>Objective</h2>
+    <p>This task demonstrates DOM manipulation and localStorage-based state handling in JavaScript.</p>
+  </div>
+
+  <div class="card">
+    <h2>Implemented Features</h2>
+    <ul>
+      <li>Task creation and completion toggling</li>
+      <li>Filtering between all/active/completed tasks</li>
+      <li>Local storage persistence</li>
+      <li>Clear completed action</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Code Snippet</h2>
+    <pre>function addTask(text) {
+  const trimmed = text.trim();
+  if (!trimmed) return;
+  tasks.unshift({ id: Date.now().toString(), text: trimmed, completed: false });
+  saveTasks();
+  renderTasks();
+}</pre>
+  </div>
+
+  <div class="card">
+    <h2>Screenshot</h2>
+    <img src="../images/todo-preview.png" alt="To-do app preview screenshot" />
+  </div>
+
+  <div class="card">
+    <h2>Hosted Link</h2>
+    <p><a href="http://127.0.0.1:8000/index.html" target="_blank">Open portfolio preview</a></p>
+  </div>
+
+  <div class="card">
+    <h2>GitHub Repository</h2>
+    <p><a href="https://github.com" target="_blank">View repository</a></p>
+  </div>
+</body>
+</html>
